@@ -273,9 +273,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1032508736}
   playerController: {fileID: 1032508737}
-  fadeSpeed: 5
+  fadeSpeed: 2
   IdleLamp: {fileID: 619394801}
   MovingLamp: {fileID: 738879601}
+  IdleDelay: 0.5
+  MovingDelay: 0.4
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0

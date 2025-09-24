@@ -1,3 +1,4 @@
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -22,6 +23,9 @@ public class PlayerController : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+
+        if (h != 0 && v != 0)
+            v = 0;
 
         _input = new Vector2(h, v).normalized;
     }
